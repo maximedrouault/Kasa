@@ -1,0 +1,20 @@
+.nav-list {
+	display: flex;
+	height: 100%;
+	align-items: center;
+	gap: 60px;
+}
+
+.nav-list-item {
+	color: #FF6060;
+}
+
+.nav-list-item:hover {
+	text-decoration: underline;
+}
+
+@media screen and (max-width: 700px) {
+	.nav-list {
+		gap: 10px;
+	}
+  }
