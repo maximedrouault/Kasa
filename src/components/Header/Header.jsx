@@ -1,5 +1,5 @@
 import "./header.css"
-import Logo from "../../assets/logo-header.png"
+import Logo from "../../assets/logo-kasa-header.png"
 import Navbar from "../Navbar/Navbar"
 
 export default function Header() {

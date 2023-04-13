@@ -1,5 +1,5 @@
 import "./footer.css"
-import Logo from "../../assets/logo-footer.png"
+import Logo from "../../assets/logo-kasa-footer.png"
 
 export default function Footer() {
     return (

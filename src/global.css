@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 
+/* Reset et définitions générales */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
 }
 
 body {
@@ -14,9 +19,6 @@ body {
 #root {
     max-width: 86%;
     margin: 40px auto 0;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
-    font-weight: 500;
 }
 
 li {
@@ -25,18 +27,29 @@ li {
 
 a {
     text-decoration: none;
+    color: inherit;
 }
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+/* Définitions générales Responsive */
 
 @media screen and (max-width: 700px) {
     #root {
         max-width: 90%;
     }
 
-	a {
+	a, p {
         font-size: 12px;
     }
 
-    p {
-        font-size: 12px;
+    h1 {
+        font-size: 24px;
     }
   }

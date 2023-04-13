@@ -1,0 +1,9 @@
+.housings-container {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #F7F7F7;
+	justify-content: center;
+	gap: 60px;
+	padding: 60px 0;
+	border-radius: 25px;
+}
