@@ -4,7 +4,7 @@ import Housings from "./pages/Housings/Housings";
 import About from "./pages/About/About";
 import NotFound from "./pages/NotFound/NotFound";
 
-export default function App() {
+export default function Router() {
   return (
 	<BrowserRouter>
 		<Routes>

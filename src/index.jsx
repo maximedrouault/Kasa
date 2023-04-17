@@ -1,11 +1,7 @@
-import "./global.css"
+import "./global.css";
 import React from "react";
-import ReactDOM from "react-dom";
-import App from "./routes";
+import { createRoot } from "react-dom/client";
+import Router from "./router";
 
-ReactDOM.render(
-  <React.StrictMode>
-      <App />
-  </React.StrictMode>,
-  document.getElementById("root")
-);
+const root = document.getElementById("root");
+createRoot(root).render(<Router />);

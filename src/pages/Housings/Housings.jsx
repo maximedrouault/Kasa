@@ -1,9 +1,9 @@
-import Layout from "../../components/Layout/layout"
+import App from "../../App"
 
 export default function Housings() {
     return (
-        <Layout> 
+        <App> 
             <h1>Housings</h1>
-        </Layout>
+        </App>
     )
 }
