@@ -2,11 +2,11 @@ import "./gallery.css"
 import housings from "../../datas/datas.json";
 import Card from "../Card/Card";
 
-import FetchData from "../../services";
+// import FetchData from "../../services";
 
 export default function Gallery() {
 
-FetchData()
+// FetchData()
 
   return (
     <section className="housings-container">
