@@ -53,7 +53,7 @@ footer {
 .about-article-description.hide {
 	opacity: 0;
 	height: 0;
-  }
+}
 
 @media screen and (max-width: 700px) {
 	.about-container {
