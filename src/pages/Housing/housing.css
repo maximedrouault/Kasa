@@ -1,0 +1,102 @@
+.housing-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+.housing-subcontainer-right {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+.housing-informations-container {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 9px;
+}
+
+.housing-informations-container .about-article {
+	width: 47%;
+}
+
+.housing-informations-container .about-article-title {
+	height: 52px;
+	font-size: 18px;
+}
+
+.housing-informations-container .about-article-description p,
+.about-article-description li {
+	font-size: 18px;
+	font-weight: 400;
+}
+
+@media screen and (max-width: 700px) {
+	main .carousel {
+		margin-bottom: 15px;
+	}
+
+	.housing-container {
+		flex-direction: column;
+		height: auto;
+	}
+
+	
+
+
+
+
+
+
+	.housing-subcontainer-right {
+		flex-direction: row-reverse;
+		height: 33px;
+		margin-top: 7px;
+	}
+
+
+
+
+
+
+
+
+
+
+
+	.housing-informations-container {
+		flex-direction: column;
+	}
+
+	.housing-informations-container .about-article {
+		width: 100%;
+	}
+
+	.housing-informations-container .about-article-title {
+		height: 30px;
+		font-size: 13px;
+	}
+
+	.housing-informations-container .about-article-description p,
+	.about-article-description li {
+	font-size: 12px;
+}
+	
+}

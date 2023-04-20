@@ -1,10 +1,10 @@
 import "./carousel.css"
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Arrow from "../../assets/arrow-carousel.svg"
 
 export default function Carousel({ pictures }) {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const numberOfPictures = pictures.length;
+  const [numberOfPictures] = useState(pictures.length);
 
   function nextImage() {
     setCurrentIndex((currentIndex + 1) % numberOfPictures);
@@ -14,21 +14,35 @@ export default function Carousel({ pictures }) {
     setCurrentIndex((currentIndex + numberOfPictures - 1) % numberOfPictures);
   }
 
+  // Effet défilement auto carrousel
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextImage();
+    }, 3000);
+
+    return () => clearInterval(interval);
+  });
+
   return (
     <section className="carousel">
-      
-      <img src={pictures[currentIndex]} alt={`CarrouselImage N°${currentIndex}`} className="carousel-pictures" />
-      
+      <img
+        src={pictures[currentIndex]}
+        alt={`Slide carrousel N°${currentIndex + 1}`}
+        className="carousel-pictures"
+      />
+
       <button onClick={prevImage} className="carousel-button-previous">
         <img src={Arrow} alt="Bouton précédent" />
       </button>
-      
-      <p className="carousel-index-pictures">{currentIndex+1}/{numberOfPictures}</p>
-      
+
+      <p className="carousel-index-pictures">
+        {currentIndex + 1}/{numberOfPictures}
+      </p>
+
       <button onClick={nextImage} className="carousel-button-next">
         <img src={Arrow} alt="Bouton suivant" />
       </button>
-
     </section>
   );
 }

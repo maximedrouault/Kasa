@@ -1,0 +1,48 @@
+.housing-title {
+	color: #FF6060;
+	font-size: 36px;
+}
+
+.housing-location {
+	margin-top: 5px;
+	color: #FF6060;
+}
+
+.housing-tags-container {
+	display: flex;
+	margin-top: 10px;
+	min-height: 25px;
+	gap: 10px;
+}
+
+.housing-tag {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: auto;
+	padding: 0 10px 0 10px;
+	min-width: 115px;
+	font-size: 14px;
+	border-radius: 10px;
+	color: #FFF;
+	background-color: #FF6060;
+}
+
+@media screen and (max-width: 700px) {
+	.housing-title {
+		font-size: 18px;
+	}
+
+	.housing-location {
+		font-size: 14px;
+	}
+
+	.housing-tags-container {
+		min-height: 18px;
+	}
+
+	.housing-tag {
+		font-size: 10px;
+		min-width: 84px;
+	}
+}

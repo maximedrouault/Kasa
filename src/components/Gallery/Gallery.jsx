@@ -1,12 +1,12 @@
 import "./gallery.css"
-import housings from "../../datas/datas.json";
+import { useState } from "react";
+import FetchDatas from "../../services";
 import Card from "../Card/Card";
-
-// import FetchData from "../../services";
 
 export default function Gallery() {
 
-// FetchData()
+// Import des données
+const [housings] = useState(FetchDatas());
 
   return (
     <section className="housings-container">

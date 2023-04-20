@@ -15,9 +15,9 @@ export default function Collapse({ title, children }) {
         {title}
         <img src={Arrow} alt="Icône dépliage de zone" className={`arrow-icon ${isOpen ? "rotate" : ""}`} />
       </h2>
-      <p className={`about-article-description ${isOpen ? "show" : "hide"}`}>
+      <div className={`about-article-description ${isOpen ? "show" : "hide"}`}>
         {children}
-      </p>
+      </div>
     </article>
   );
 }
