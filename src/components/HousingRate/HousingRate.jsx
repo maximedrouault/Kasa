@@ -16,6 +16,8 @@ export default function HousingRate({ rating }) {
   }
 
   return (
-   	<div className="housing-rate-container">{stars}</div>
+   	<div className="housing-rate-container">
+      {stars}
+    </div>
   );
 }
