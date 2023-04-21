@@ -3,29 +3,11 @@
 	justify-content: space-between;
 }
 
-
-
-
-
-
-
-
-
-
-
 .housing-subcontainer-right {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 }
-
-
-
-
-
-
-
-
 
 .housing-informations-container {
 	display: flex;
@@ -58,28 +40,11 @@
 		height: auto;
 	}
 
-	
-
-
-
-
-
-
 	.housing-subcontainer-right {
 		flex-direction: row-reverse;
 		height: 33px;
 		margin-top: 7px;
 	}
-
-
-
-
-
-
-
-
-
-
 
 	.housing-informations-container {
 		flex-direction: column;
@@ -97,6 +62,5 @@
 	.housing-informations-container .about-article-description p,
 	.about-article-description li {
 	font-size: 12px;
-}
-	
+	}
 }
