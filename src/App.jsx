@@ -3,12 +3,14 @@ import Footer from "./components/Footer/Footer";
 
 export default function App ({ children }) {
   return (
-    <div>
+    <>
+    <div className="layout-container">
       <Header />
       <main>
         {children}
       </main>
-      <Footer />
     </div>
+      <Footer />
+    </>
   );
 }

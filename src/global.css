@@ -12,12 +12,10 @@
 }
 
 body {
-    max-width: 1440px;
     margin: 0 auto;
 }
 
 #root {
-    max-width: 86%;
     margin: 40px auto 0;
 }
 
@@ -38,13 +36,15 @@ h2 {
     font-size: 18px;
 }
 
+.layout-container {
+    max-width: 1240px;
+    width: 90%;
+    margin: auto;
+}
+
 /* Définitions générales Responsive */
 
 @media screen and (max-width: 700px) {
-    #root {
-        max-width: 90%;
-    }
-
 	a, p {
         font-size: 12px;
     }

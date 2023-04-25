@@ -9,6 +9,11 @@
 	color: #FF6060;
 }
 
+.nav-list-item-active {
+	color: #FF6060;
+	text-decoration: underline;
+}
+
 .nav-list-item:hover {
 	text-decoration: underline;
 }
